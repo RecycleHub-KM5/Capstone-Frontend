@@ -210,7 +210,10 @@ const Register = () => {
                                         <p className="color-light font-paragraph poppins-medium me-2">
                                             Sudah punya akun?
                                         </p>
-                                        <Link className="btnText font-paragraph poppins-light">
+                                        <Link
+                                            to="/login"
+                                            className="btnText font-paragraph poppins-light"
+                                        >
                                             Masuk sekarang
                                         </Link>
                                     </div>
