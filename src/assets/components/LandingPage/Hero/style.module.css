@@ -6,6 +6,9 @@
 }
 
 .btnCTA {
+    display: block;
+    text-decoration: none;
+    width: 30%;
     background: none;
     border: 1px #fefefe solid;
     border-radius: 8px;

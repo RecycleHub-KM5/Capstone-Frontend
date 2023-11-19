@@ -19,17 +19,14 @@ const LPHero = () => {
                         RecycleHub hadir untuk membantu mengatasi permasalahan
                         sampah.
                     </h4>
-                    <button
-                        className={`${styles.btnCTA} mt-4`}
-                        to="/information"
-                    >
+                    <Link className={`${styles.btnCTA} mt-4`} to="/information">
                         <div className="wrapper d-flex align-items-center">
                             <p className="cta-text poppins-bold font-paragraph my-auto">
                                 Pelajari lebih lanjut
                             </p>
                             <i className="fa-solid fa-arrow-right ms-2"></i>
                         </div>
-                    </button>
+                    </Link>
                 </div>
                 <div id="flex-2"></div>
                 <div className={styles.heroImg} id="flex-6">
