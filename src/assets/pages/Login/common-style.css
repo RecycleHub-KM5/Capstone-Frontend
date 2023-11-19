@@ -1,0 +1,17 @@
+.login {
+    width: 100%;
+    height: 100vh;
+}
+
+.login .row {
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.btnText {
+    background: none;
+    color: #44d62c;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}

@@ -1,0 +1,49 @@
+#bgLogin {
+    width: 100%;
+    height: 100%;
+    background-repeat: none;
+    background-size: contain;
+}
+
+.iconInput {
+    background: none !important;
+    border-right: none !important;
+    border-color: #b2b0b0;
+}
+
+.iconInputAppend {
+    background: none !important;
+    border-left: none !important;
+    border-color: #b2b0b0;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.input {
+    border-left: none !important;
+    box-shadow: none !important;
+    background: none !important;
+    color: #fefefe !important;
+}
+
+.inputWithAppend {
+    border-left: none !important;
+    border-right: none !important;
+    box-shadow: none !important;
+    background: none !important;
+    color: #fefefe !important;
+}
+
+input:focus {
+    border-color: #fefefe !important;
+}
+
+.btnLogin {
+    outline: none;
+    border: none;
+}
+
+.btnLogin:hover {
+    background-color: #005700;
+    color: rgb(254, 254, 254, 0.65);
+}

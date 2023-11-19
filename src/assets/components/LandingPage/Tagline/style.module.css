@@ -1,0 +1,58 @@
+.tagline {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: -45px;
+}
+
+.taglineText {
+    color: #fefefe;
+    font-size: 60px;
+    text-align: end;
+    margin: 0;
+    font-family: "PoppinsBold";
+}
+
+.taglineText2 {
+    color: #fefefe;
+    font-size: 60px;
+    text-align: start;
+    margin: 0;
+    font-family: "PoppinsBold";
+}
+
+.taglineImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taglineWrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+}
+
+.taglineCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefe;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #050607;
+    margin: 0;
+    font-family: "PoppinsBold";
+}
+
+#flex-5 {
+    flex-grow: 5;
+}
+
+#flex-2 {
+    flex-grow: 2;
+}
