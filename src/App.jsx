@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import Router from "./assets/config/router";
+import Router from "./config/router";
 
 // Boostrap
 import "./assets/plugins/bootstrap/css/bootstrap.min.css";

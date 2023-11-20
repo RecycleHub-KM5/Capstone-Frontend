@@ -3,6 +3,11 @@ import "./style.css";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
+    const status = localStorage.getItem("status_login");
+    const token = localStorage.getItem("token");
+    const userName = localStorage.getItem("userName");
+    console.log(token, status, userName);
+
     return (
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid p-0">
@@ -57,36 +62,40 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="wrapper ms-3" id="btn-wrapper-auth">
-                        <NavLink
-                            to="/login"
-                            id="btn-login"
-                            className="navlink poppins-semiBold"
-                        >
-                            Masuk
-                        </NavLink>
-                        <Link
-                            id="btn-register"
-                            className="poppins-semiBold"
-                            to="register"
-                        >
-                            Daftar
-                        </Link>
-                    </div>
-                    {/* <div
+                    {status == null && (
+                        <div className="wrapper ms-3" id="btn-wrapper-auth">
+                            <NavLink
+                                to="/login"
+                                id="btn-login"
+                                className="navlink poppins-semiBold"
+                            >
+                                Masuk
+                            </NavLink>
+                            <Link
+                                id="btn-register"
+                                className="poppins-semiBold"
+                                to="register"
+                            >
+                                Daftar
+                            </Link>
+                        </div>
+                    )}
+                    {status && (
+                        <div
                             className="wrapper btn-wrapper-none ms-3"
                             id="btn-wrapper-user"
                         >
                             <button id="btn-user">
-                                <h3 className="poppins-medium font-paragraph mt-2">
-                                    Hallo, User
+                                <h3 className="poppins-medium color-light font-paragraph mt-2">
+                                    {userName}
                                 </h3>
                                 <img
                                     src="https://i.ibb.co/gZyqXvV/dummy-ava.png"
                                     alt=""
                                 />
                             </button>
-                        </div> */}
+                        </div>
+                    )}
                 </div>
             </div>
         </nav>
