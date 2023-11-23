@@ -4,7 +4,7 @@ import "swiper/css";
 const InformationSwiper = () => {
   return (
     <div className="col-12">
-      <Swiper className="mySwiper" slidePerView={5} spaceBetweeen={30}>
+      <Swiper className="mySwiper" slidesPerView={3} spaceBetween={30}>
         <SwiperSlide>
           <div class="card-container d-flex flex-column">
             <div class="card-head">
@@ -22,6 +22,8 @@ const InformationSwiper = () => {
               </p>
             </div>
           </div>
+          </SwiperSlide>
+          <SwiperSlide>
           <div class="card-container d-flex flex-column">
             <div class="card-head">
               <img src="https://cdn.discordapp.com/attachments/1164510335114428526/1164513037626122280/image.png?ex=65437c47&is=65310747&hm=1ffe8a3c8b7000bbf0611529d282a48add9d7b36c4c83fcccccde27c8c5d048c&" />
