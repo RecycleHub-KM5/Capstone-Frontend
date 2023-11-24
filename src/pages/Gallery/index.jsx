@@ -2,6 +2,7 @@ import React from "react";
 import MainLayout from "../../layout/MainLayout";
 import Navbar from "../../components/GlobalComponent/Navbar";
 import Footer from "../../components/GlobalComponent/Footer";
+import "./style.css";
 
 const Gallery = () => {
     return (

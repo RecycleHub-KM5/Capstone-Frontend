@@ -105,14 +105,16 @@ const Register = () => {
                             <img
                                 src="/images/bg-register.png"
                                 draggable="false"
-                                id={styles.bgLogin}
+                                id={styles.bgRegister}
                             />
                         </div>
                         <div className="col-sm-12 col-md-6 col-xl-6">
                             <form onSubmit={submitRegister}>
                                 <div className="col-sm-6 col-md-6 col-xl-6 mx-auto">
                                     <div className="header mb-5">
-                                        <h1 className="font-title poppins-bold color-light">
+                                        <h1
+                                            className={`${styles.fontTitle} poppins-bold color-light`}
+                                        >
                                             Daftar dan bergabung bersama kami!
                                         </h1>
                                         <p className="font-paragraph poppins-medium color-light">

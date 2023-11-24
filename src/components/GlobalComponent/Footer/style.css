@@ -86,3 +86,32 @@ footer li {
 .line {
     border-top: 1px solid rgb(202, 202, 202, 0.25);
 }
+
+@media only screen and (max-width: 575px) and (min-width: 320px) {
+    .no-indent {
+        display: flex;
+        gap: 8px;
+        list-style: none;
+        padding: 8px 0;
+        margin: 0;
+    }
+
+    .no-indent li a {
+        font-size: 12px;
+    }
+
+    .footer-desc {
+        width: 100%;
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 40px;
+    }
+}

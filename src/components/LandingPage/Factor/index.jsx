@@ -6,7 +6,9 @@ import { Pagination } from "swiper/modules";
 const LPFactor = () => {
     return (
         <section className="factor">
-            <h1 className="factor-title poppins-bold font-title color-light mt-5">
+            <h1
+                className={`${styles.factorTitle} poppins-bold font-title color-light mt-5`}
+            >
                 Faktor-faktor penyebab <br />
                 penumpukan sampah
             </h1>
@@ -19,32 +21,36 @@ const LPFactor = () => {
                     >
                         <SwiperSlide className={styles.sliderItem}>
                             <div className="col-sm-7 col-md-7 col-lg-7 my-auto p-3">
-                                <h1 className="factor-title poppins-bold font-title color-light">
+                                <h1
+                                    className={`${styles.factorTitle} poppins-bold font-title color-light`}
+                                >
                                     KURANGNYA TPA
                                 </h1>
                                 <ul id="first-swiper-slide">
-                                    <li className="factor-item color-light poppins-medium font-paragraph">
+                                    <li
+                                        className={`${styles.factorItem} color-light poppins-medium font-paragraph`}
+                                    >
                                         Volume sampah sangat besar dan tidak
                                         diimbangi oleh daya tamping TPA sehingga
                                         melebihi kapasitasnya.
                                     </li>
-                                    <button
-                                        // onclick="this.style.display = 'none';handleFirstCard(); hideElements()"
-                                        id={styles.btnHidden}
-                                        className="factor-item color-light poppins-medium font-paragraph"
+
+                                    <li
+                                        className={`${styles.factorItem} color-light poppins-medium font-paragraph`}
                                     >
-                                        .....baca selengkapnya
-                                    </button>
-                                    <li className="factor-hidden-item color-light poppins-medium font-paragraph">
                                         Lahan TPA semakin menyempit akibat
                                         tergusur oleh pengunaan lain.
                                     </li>
-                                    <li className="factor-hidden-item color-light poppins-medium font-paragraph">
+                                    <li
+                                        className={`${styles.factorItem} color-light poppins-medium font-paragraph`}
+                                    >
                                         Jarak TPA dan pusat sampah relatif jauh
                                         hingga waktu untuk menganggut sampah
                                         kurang efektif.
                                     </li>
-                                    <li className="factor-hidden-item color-light poppins-medium font-paragraph">
+                                    <li
+                                        className={`${styles.factorItem} color-light poppins-medium font-paragraph`}
+                                    >
                                         Fasilitas pengakutan sampah terbatas dan
                                         tidak mampu menganggut seluruh sampah.
                                     </li>
@@ -59,10 +65,14 @@ const LPFactor = () => {
                         </SwiperSlide>
                         <SwiperSlide className={styles.sliderItem}>
                             <div className="col-sm-7 col-md-7 col-lg-7 my-auto p-3">
-                                <h1 className="factor-title poppins-bold font-title color-light">
+                                <h1
+                                    className={`${styles.factorTitle} poppins-bold font-title color-light`}
+                                >
                                     PRODUK SEKALI PAKAI
                                 </h1>
-                                <p className="factor-desc font-paragraph color-light lh-base poppins-medium">
+                                <p
+                                    className={`${styles.factorItem} font-paragraph color-light lh-base poppins-medium`}
+                                >
                                     Salah satu faktor utama yang berkontribusi
                                     terhadap pemanasan global. Ketika industri
                                     menghasilkan energi atau memproduksi barang,

@@ -6,7 +6,7 @@
     z-index: 1;
 }
 
-ul .active {
+.navbar-nav .active {
     color: #44d62c;
 }
 
