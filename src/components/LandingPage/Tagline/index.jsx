@@ -10,7 +10,10 @@ const LPTagline = () => {
                     <h4 className={styles.taglineText}>HUB</h4>
                 </div>
                 <div className={styles.taglineImg} id="flex-2">
-                    <img src="https://i.ibb.co/8j7Czb2/hero-1.png" />
+                    <img
+                        src="https://i.ibb.co/8j7Czb2/hero-1.png"
+                        id={styles.img}
+                    />
                 </div>
                 <div className={styles.taglineText2} id="flex-5">
                     <h1 className={styles.taglineText2}>FOR BETTER</h1>
