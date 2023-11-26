@@ -34,9 +34,9 @@ const Sidebar = () => {
                     </NavLink>
                     <div className="sidelink mb-4 poppins-medium color-light">
                         <div className="wrapper d-flex align-items-center">
-                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <i className="fa-solid fa-right-from-bracket"></i>
                             <h3 className="font-paragraph my-auto ms-2">
-                                Loogut
+                                Logout
                             </h3>
                         </div>
                     </div>

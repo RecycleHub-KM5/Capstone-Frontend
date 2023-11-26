@@ -1,0 +1,26 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 8px;
+}
+
+.gridItem {
+    background-color: #222222;
+    border-radius: 4px;
+}
+
+.gridItem img {
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.cardBody {
+    padding: 20px;
+}
+
+.cardDescription {
+    color: #888888;
+}
