@@ -1,0 +1,16 @@
+.history {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(56, 59, 62, 0.5);
+}
+
+.historyCard {
+    width: 50%;
+    background-color: #414444;
+}
+
+.historyImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+}

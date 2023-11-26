@@ -147,9 +147,6 @@ const Register = () => {
                                             value={formData.name}
                                             onChange={handleChange}
                                         ></input>
-                                        <div className="invalid-feedback">
-                                            Mohon masukkan email anda
-                                        </div>
                                     </div>
 
                                     <label
@@ -175,9 +172,6 @@ const Register = () => {
                                             value={formData.email}
                                             onChange={handleChange}
                                         ></input>
-                                        <div className="invalid-feedback">
-                                            Mohon masukkan email anda
-                                        </div>
                                     </div>
 
                                     <label
@@ -225,9 +219,6 @@ const Register = () => {
                                                 )}
                                             </span>
                                         </div>
-                                        <div className="invalid-feedback">
-                                            Mohon masukkan password anda
-                                        </div>
                                     </div>
 
                                     <label
@@ -272,9 +263,6 @@ const Register = () => {
                                                     ></i>
                                                 )}
                                             </span>
-                                        </div>
-                                        <div className="invalid-feedback">
-                                            Mohon masukkan password anda
                                         </div>
                                     </div>
 

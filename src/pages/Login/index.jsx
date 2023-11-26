@@ -96,9 +96,6 @@ const Login = () => {
                                             onChange={handleChange}
                                             required
                                         ></input>
-                                        <div className="invalid-feedback">
-                                            Mohon masukkan email anda
-                                        </div>
                                     </div>
 
                                     <label
@@ -146,9 +143,6 @@ const Login = () => {
                                                     ></i>
                                                 )}
                                             </span>
-                                        </div>
-                                        <div className="invalid-feedback">
-                                            Mohon masukkan password anda
                                         </div>
                                     </div>
 
