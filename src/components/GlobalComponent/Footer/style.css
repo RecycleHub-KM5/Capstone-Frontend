@@ -4,7 +4,7 @@
 }
 
 .footer-desc {
-    font-size: 12px;
+    font-size: 12px !important;
     color: rgb(254, 254, 254, 0.8);
     width: 50%;
 }

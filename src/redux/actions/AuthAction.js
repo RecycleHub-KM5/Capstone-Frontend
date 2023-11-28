@@ -1,7 +1,8 @@
 import axios from "axios";
 import Swal from "sweetalert2";
+import { BASE_URL } from "../../config/network";
 
-const BASE_URL = "http://localhost:3002";
+console.log(BASE_URL);
 
 export const AuthLogin = (datas) => {
     let data = {
@@ -9,7 +10,7 @@ export const AuthLogin = (datas) => {
         password: datas.password,
     };
     return axios
-        .post(BASE_URL + "/users/auth/login", data)
+        .post(BASE_URL + "/api/users/auth/login", data)
         .then((response) => {
             const result = response.data;
 
@@ -51,7 +52,7 @@ export const AuthRegister = (datas) => {
         password: datas.password,
     };
     return axios
-        .post(BASE_URL + "/users/auth/register", data)
+        .post(BASE_URL + "/api/users/auth/register", data)
         .then((response) => {
             const result = response.data;
 

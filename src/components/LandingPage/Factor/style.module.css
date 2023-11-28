@@ -11,7 +11,7 @@
 
 .sliderItem {
     position: relative;
-    display: flex;
+    display: flex !important;
     background-color: #050607;
     border-radius: 12px;
     flex: 0 0 95%;

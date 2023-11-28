@@ -7,7 +7,8 @@ import Product from "../../pages/Product";
 import Login from "../../pages/Login";
 import Register from "../../pages/Register";
 import Transaction from "../../pages/UserMenu/Transaction";
-import Settings from "../../pages/UserMenu/Settings";
+import DetailProduct from "../../pages/DetailProduct";
+import ChangeName from "../../pages/UserMenu/Settings/ChangeName";
 
 const Router = () => {
     return (
@@ -16,13 +17,14 @@ const Router = () => {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/information" element={<Information />} />
             <Route path="/products" element={<Product />} />
+            <Route path="/products/:param" element={<DetailProduct />} />
 
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
 
             {/* User Menu */}
             <Route path="/users/transaction" element={<Transaction />} />
-            <Route path="/users/settings" element={<Settings />} />
+            <Route path="/users/settings" element={<ChangeName />} />
         </Routes>
     );
 };
