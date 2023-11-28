@@ -24,7 +24,7 @@ const Footer = () => {
                         <h3 className="footer-header poppins-medium">
                             Tentang RecycleHub
                         </h3>
-                        <p className="footer-desc" id="description">
+                        <p className="footer-desc">
                             RecycleHub bertujuan untuk mengurangi sampah dengan
                             menyajikan konten edukasi dan daur ulang untuk masa
                             depan yang lebih baik di generasi selanjutnya.

@@ -16,12 +16,6 @@
     color: #fefefe;
 }
 
-.btnCTA:hover {
-    background-color: #44d62c;
-    color: #050607;
-    border: none;
-}
-
 #flex-6 {
     flex-grow: 6;
 }

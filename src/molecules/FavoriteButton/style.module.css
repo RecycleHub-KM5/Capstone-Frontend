@@ -1,0 +1,9 @@
+.favoriteBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: #8e8e8e !important;
+    gap: 4px;
+}

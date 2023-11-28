@@ -1,0 +1,11 @@
+.inputFile {
+    background-color: #44d62c;
+    color: #050607;
+    border-radius: 8px;
+    border: 0;
+}
+
+.inputFile:hover {
+    background-color: #005700;
+    color: rgb(254, 254, 254, 0.65);
+}

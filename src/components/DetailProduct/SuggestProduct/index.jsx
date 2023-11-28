@@ -1,11 +1,11 @@
 import React from "react";
-import MainLayout from "../../layout/MainLayout";
+import MainLayout from "../../../layout/MainLayout";
 import styles from "./style.module.css";
 
-const ProductContent = () => {
+const SuggestProduct = () => {
     return (
         <MainLayout>
-            <div className={`${styles.gridContainer} mb-5`}>
+            <div className={`${styles.gridContainer} mb-5 mt-3`}>
                 <div className={styles.gridItem}>
                     <div className="card-img">
                         <img
@@ -130,4 +130,4 @@ const ProductContent = () => {
     );
 };
 
-export default ProductContent;
+export default SuggestProduct;
