@@ -17,3 +17,8 @@
     background: #44d62c;
     border-radius: 4px;
 }
+
+.menu-wrapper {
+    display: block;
+    height: 100%;
+}

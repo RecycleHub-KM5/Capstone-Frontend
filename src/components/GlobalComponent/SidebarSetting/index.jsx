@@ -11,35 +11,38 @@ const SidebarSettings = () => {
                 </h1>
                 <div className="user-menu mt-5">
                     <NavLink
-                        to="/users/transaction"
-                        className="sidelink mb-4 poppins-medium color-light"
-                    >
-                        <div className="wrapper d-flex align-items-center">
-                            <i className="fa-solid fa-wallet"></i>
-                            <h3 className="font-paragraph my-auto ms-2">
-                                Riwayat Transaksi
-                            </h3>
-                        </div>
-                    </NavLink>
-                    <NavLink
                         to="/users/settings"
                         className="sidelink mb-4 poppins-medium color-light"
                     >
                         <div className="wrapper d-flex align-items-center">
-                            <i className="fa-solid fa-gear"></i>
+                            <i className="fa-solid fa-user"></i>
                             <h3 className="font-paragraph my-auto ms-2">
-                                Setting
+                                Detail Profil
                             </h3>
                         </div>
                     </NavLink>
-                    <div className="sidelink mb-4 poppins-medium color-light">
+                    <NavLink
+                        to="/users/settings/password"
+                        className="sidelink mb-4 poppins-medium color-light"
+                    >
+                        <div className="wrapper d-flex align-items-center">
+                            <i className="fa-solid fa-key"></i>
+                            <h3 className="font-paragraph my-auto ms-2">
+                                Ubah Password
+                            </h3>
+                        </div>
+                    </NavLink>
+                    <NavLink
+                        to="/users/transaction"
+                        className="sidelink mb-4 poppins-medium color-light"
+                    >
                         <div className="wrapper d-flex align-items-center">
                             <i className="fa-solid fa-right-from-bracket"></i>
                             <h3 className="font-paragraph my-auto ms-2">
-                                Logout
+                                Kembali
                             </h3>
                         </div>
-                    </div>
+                    </NavLink>
                 </div>
             </div>
         </>

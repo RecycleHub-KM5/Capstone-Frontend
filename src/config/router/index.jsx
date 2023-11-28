@@ -9,6 +9,7 @@ import Register from "../../pages/Register";
 import Transaction from "../../pages/UserMenu/Transaction";
 import DetailProduct from "../../pages/DetailProduct";
 import ChangeName from "../../pages/UserMenu/Settings/ChangeName";
+import ChangePassword from "../../pages/UserMenu/Settings/ChangePassword";
 
 const Router = () => {
     return (
@@ -25,6 +26,10 @@ const Router = () => {
             {/* User Menu */}
             <Route path="/users/transaction" element={<Transaction />} />
             <Route path="/users/settings" element={<ChangeName />} />
+            <Route
+                path="/users/settings/password"
+                element={<ChangePassword />}
+            />
         </Routes>
     );
 };
