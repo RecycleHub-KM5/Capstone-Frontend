@@ -2,8 +2,6 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import { BASE_URL } from "../../config/network";
 
-console.log(BASE_URL);
-
 export const AuthLogin = (datas) => {
     let data = {
         email: datas.email,

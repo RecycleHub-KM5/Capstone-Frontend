@@ -1,5 +1,6 @@
 const initialStateApi = {
     dataProduct: null,
+    dataDetailProduct: null,
 };
 
 const productReducer = (state = initialStateApi, action) => {
@@ -7,7 +8,12 @@ const productReducer = (state = initialStateApi, action) => {
         return {
             ...state,
             dataProduct: action.payload,
-            oriDataProduct: action.original,
+        };
+    }
+    if (action.type === "SET_DETAIL_PRODUCT") {
+        return {
+            ...state,
+            dataDetailProduct: action.payload,
         };
     }
 
