@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import userReducer from "./reducers/User";
-import thunk from "redux-thunk";
+import productReducer from "./reducers/Product";
 
 export default configureStore({
     reducer: {
         userReducer,
+        productReducer,
     },
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(thunk),
 });

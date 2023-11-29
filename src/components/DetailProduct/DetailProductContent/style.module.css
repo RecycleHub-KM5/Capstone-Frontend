@@ -59,6 +59,14 @@
     width: 50%;
 }
 
+.switchButton {
+    background-color: transparent;
+    color: #fefefefe;
+    border: 1px solid #cacaca;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
 @media only screen and (max-width: 575px) and (min-width: 320px) {
     .contentContainer {
         padding: 12px;

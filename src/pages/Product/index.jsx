@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MainLayout from "../../layout/MainLayout";
 import Navbar from "../../components/GlobalComponent/Navbar";
 import SearchBar from "../../molecules/SearchBar";
 import FilterCategoryBox from "../../molecules/FilterCategoryBox";
 import ProductContent from "../../components/Product";
 import Footer from "../../components/GlobalComponent/Footer";
+import { useDispatch, useSelector } from "react-redux";
+import { GetProduct } from "../../redux/actions/ProductAction";
 
 const Product = () => {
+    const { dataProduct } = useSelector((state) => state.productReducer);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        if (dataProduct === null) {
+            dispatch(GetProduct());
+        }
+    }, [dispatch, dataProduct]);
+
     return (
         <MainLayout>
             <div className="container">
@@ -25,7 +36,7 @@ const Product = () => {
                         <h3 className="poppins-bold font-paragraph color-light">
                             Untuk Kamu
                         </h3>
-                        <ProductContent />
+                        <ProductContent dataProduct={dataProduct} />
                     </div>
                 </div>
 

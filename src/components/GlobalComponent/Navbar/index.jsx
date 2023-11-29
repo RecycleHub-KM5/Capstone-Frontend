@@ -4,9 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const status = localStorage.getItem("status_login");
-    const token = localStorage.getItem("token");
     const userName = localStorage.getItem("userName");
-    console.log(token, status, userName);
 
     return (
         <nav className="navbar navbar-expand-lg">
@@ -85,7 +83,11 @@ const Navbar = () => {
                             className="wrapper btn-wrapper-none ms-3"
                             id="btn-wrapper-user"
                         >
-                            <button id="btn-user">
+                            <Link
+                                id="btn-user"
+                                to="/users/transaction"
+                                className="text-decoration-none"
+                            >
                                 <h3 className="poppins-medium color-light font-paragraph mt-2">
                                     {userName}
                                 </h3>
@@ -93,7 +95,7 @@ const Navbar = () => {
                                     src="https://i.ibb.co/gZyqXvV/dummy-ava.png"
                                     alt=""
                                 />
-                            </button>
+                            </Link>
                         </div>
                     )}
                 </div>

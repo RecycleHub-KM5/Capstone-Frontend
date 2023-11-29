@@ -1,8 +1,16 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./style.css";
 
 const Sidebar = () => {
+    const navigate = useNavigate();
+    const signOut = () => {
+        localStorage.removeItem("status_login");
+        localStorage.removeItem("token");
+        localStorage.removeItem("userName");
+
+        navigate("/");
+    };
     return (
         <>
             <div className="wrapper menu-wrapper p-4">
@@ -45,7 +53,10 @@ const Sidebar = () => {
                             </div>
                         </NavLink>
                     </div>
-                    <div className="sidelink mb-4 poppins-medium color-light">
+                    <div
+                        className="sidelink mb-4 poppins-medium color-light"
+                        onClick={() => signOut()}
+                    >
                         <div className="wrapper d-flex align-items-center">
                             <i className="fa-solid fa-right-from-bracket"></i>
                             <h3 className="font-paragraph my-auto ms-2">

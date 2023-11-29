@@ -1,32 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 
-const ProductDetailGallery = () => {
-    const thumbnailImages = [
-        "https://media.discordapp.net/attachments/1164510335114428526/1176750376796557434/image.png?ex=65700130&is=655d8c30&hm=7cd16abfdcff5efa5edb54e8b2614fbd73f141fc92e7f27020ddef65b988e1d3&=&format=webp&width=409&height=364",
-        "https://media.discordapp.net/attachments/1164510335114428526/1176751080860819507/image.png?ex=657001d8&is=655d8cd8&hm=5f391b795f159547c91665cba6c4afd002e9afff73e8b9dab5cf0fcbf1b83ff1&=&format=webp&width=409&height=409",
-        "https://media.discordapp.net/attachments/1164510335114428526/1176753186921533490/image.png?ex=657003ce&is=655d8ece&hm=e336b4b2f74085bc7fc7f857c5312f3f37bf8fac0f468d877e0994cb7ce53fbc&=&format=webp&width=409&height=409",
-    ];
-
-    const [mainImage, setMainImage] = useState(thumbnailImages[0]);
+const ProductDetailGallery = ({ data }) => {
+    const [mainImage, setMainImage] = useState(
+        data.length > 0 ? data[0].image : ""
+    );
 
     const handleThumbnailHover = (thumbnail) => {
         setMainImage(thumbnail);
     };
+
+    useEffect(() => {
+        setMainImage(data.length > 0 ? data[0].image : "");
+    }, [data]);
 
     return (
         <div className="product-gallery">
             <div className="row">
                 <div className="col-sm-2 col-md-2 col-xl-2">
                     <div className={styles.thumbnailContainer}>
-                        {thumbnailImages.map((thumbnail, index) => (
+                        {data.map((item) => (
                             <img
-                                key={index}
-                                src={thumbnail}
-                                alt={`Thumbnail ${index + 1}`}
+                                key={item.id}
+                                src={item.image}
                                 className={`${styles.thumbnail} my-1`}
                                 onMouseEnter={() =>
-                                    handleThumbnailHover(thumbnail)
+                                    handleThumbnailHover(item.image)
                                 }
                             />
                         ))}
