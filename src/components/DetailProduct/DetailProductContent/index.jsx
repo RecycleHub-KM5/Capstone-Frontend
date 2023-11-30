@@ -7,6 +7,7 @@ import QuantityControl from "../../../molecules/QuantityControl";
 import FavoriteButton from "../../../molecules/FavoriteButton";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import { BASE_URL } from "../../../config/network";
 
 const DetailProductContent = ({ product }) => {
     const [showNoteForm, setShowNoteForm] = useState(false);
@@ -15,7 +16,9 @@ const DetailProductContent = ({ product }) => {
         product && product.length > 0 ? product[0] : null
     );
     const [token, setToken] = useState("");
+    const [quantity, setQuantity] = useState(1);
     const { param } = useParams();
+    const userToken = localStorage.getItem("token");
 
     const handleSwitchProduct = (selectedProduct) => {
         setSelectedProduct(selectedProduct);
@@ -43,20 +46,21 @@ const DetailProductContent = ({ product }) => {
 
     const payment = async () => {
         const data = {
-            token: localStorage.getItem("token"),
+            token: userToken,
             product_detail_id: param,
-            quantity: 1,
+            quantity: quantity,
             name: `${selectedProduct.name}`,
             total_price: `${selectedProduct.product.price}`,
         };
         const config = {
             headers: {
+                Authorization: `Bearer ${userToken}`,
                 "Content-Type": "application/json",
             },
         };
 
         const response = await axios.post(
-            "http://localhost:3039/api/payment/proccess-transaction",
+            BASE_URL + "/api/payment/proccess-transaction",
             data,
             config
         );
@@ -68,10 +72,10 @@ const DetailProductContent = ({ product }) => {
         if (token) {
             window.snap.pay(token, {
                 onSuccess: (result) => {
-                    localStorage.setItem("Pembayaran", result);
+                    localStorage.setItem("Pembayaran", JSON.stringify(result));
                 },
                 onPending: (result) => {
-                    localStorage.setItem("Pembayaran", result);
+                    localStorage.setItem("Pembayaran", JSON.stringify(result));
                 },
                 onError: (error) => {
                     console.log(error);
@@ -168,7 +172,9 @@ const DetailProductContent = ({ product }) => {
                                     Atur Jumlah :
                                 </h3>
                                 <div className="wrapper d-flex">
-                                    <QuantityControl />
+                                    <QuantityControl
+                                        onQuantityChange={setQuantity}
+                                    />
                                     <button
                                         className={`${styles.cart} color-light d-flex justify-content-center align-items-center ms-2`}
                                     >
