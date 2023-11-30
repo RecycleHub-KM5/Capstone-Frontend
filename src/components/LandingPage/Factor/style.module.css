@@ -1,0 +1,45 @@
+.factorImg {
+    max-width: 100%;
+    height: auto;
+}
+
+.sliderContainer {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.sliderItem {
+    position: relative;
+    display: flex !important;
+    background-color: #050607;
+    border-radius: 12px;
+    flex: 0 0 95%;
+    margin-right: 12px;
+    overflow: hidden;
+}
+
+#btnHidden {
+    display: none;
+}
+
+@media only screen and (max-width: 575px) and (min-width: 320px) {
+    .factorTitle {
+        font-size: 18px !important;
+    }
+
+    .factorImg {
+        object-fit: fill;
+        object-position: right 50%;
+    }
+
+    .factorItem {
+        font-size: 12px !important;
+    }
+
+    .sliderItem {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        height: auto;
+    }
+}

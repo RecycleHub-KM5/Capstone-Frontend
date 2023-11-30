@@ -1,0 +1,94 @@
+.contentContainer {
+    background-color: #222222;
+    border-radius: 8px;
+    padding: 24px 32px;
+}
+
+.cart {
+    border: 1px solid #cacaca;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.buy {
+    border: none;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+.buy:hover {
+    background-color: #005700;
+    color: rgb(254, 254, 254, 0.65);
+}
+
+.shareBtn {
+    border: none;
+    background-color: transparent;
+    color: #8e8e8e;
+}
+
+.noteForm {
+    background-color: #414444;
+    width: 100%;
+    color: #fefefe;
+    border-radius: 8px;
+}
+
+.addButton {
+    background-color: #44d62c;
+    color: #050607;
+    border-radius: 4px;
+    border: none;
+    padding: 4px 8px;
+}
+
+.addButton:hover {
+    background-color: #005700;
+    color: rgb(254, 254, 254, 0.65);
+}
+
+.cancelButton {
+    background-color: transparent;
+    border: 1px solid #cacaca;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.line {
+    width: 50%;
+}
+
+.switchButton {
+    background-color: transparent;
+    color: #fefefefe;
+    border: 1px solid #cacaca;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 575px) and (min-width: 320px) {
+    .contentContainer {
+        padding: 12px;
+    }
+
+    .flexWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subtitle {
+        font-size: 16px !important;
+        margin-top: 20px;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .cart p {
+        padding: 0;
+        font-size: 10px !important;
+        margin: 0 !important;
+    }
+}

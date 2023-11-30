@@ -1,0 +1,24 @@
+.sidelink {
+    text-decoration: none;
+    display: block;
+    color: #fefefe;
+    padding: 8px 12px;
+    background: #050607;
+}
+
+.sidelink:hover {
+    color: #44d62c;
+}
+
+.user-menu .active {
+    display: block;
+    color: #050607;
+    padding: 8px 12px;
+    background: #44d62c;
+    border-radius: 4px;
+}
+
+.menu-wrapper {
+    display: block;
+    height: 100%;
+}

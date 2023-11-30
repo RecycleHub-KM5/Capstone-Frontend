@@ -1,0 +1,11 @@
+.box {
+    width: 100%;
+    background-color: #222222;
+    border-radius: 8px;
+}
+
+.btnFilter {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}

@@ -1,0 +1,14 @@
+.hero1 {
+    background: url("https://i.ibb.co/9pvGJxs/tagline.png") center scroll;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 720px;
+    background-size: cover;
+    position: relative;
+}
+
+@media only screen and (max-width: 575px) and (min-width: 320px) {
+    .hero1 {
+        height: 600px;
+    }
+}

@@ -1,0 +1,70 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar-nav .active {
+    color: #44d62c;
+}
+
+.navlink {
+    color: #fefefe;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.navlink:hover {
+    color: #44d62c;
+}
+
+.navbar-brand:hover {
+    color: #fefefe !important;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+#btn-register {
+    text-decoration: none;
+    background: #44d62c;
+    border: 0;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #050607;
+    padding: 8px 16px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+#btn-register:hover {
+    background-color: #005700;
+    color: rgb(254, 254, 254, 0.65);
+}
+
+#btn-user {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+    gap: 12px;
+    cursor: pointer;
+}
+
+#btn-user img {
+    width: 50px;
+    height: auto;
+}
+
+.brand-image {
+    width: 40px;
+}

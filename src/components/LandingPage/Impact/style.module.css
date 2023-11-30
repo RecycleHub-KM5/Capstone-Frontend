@@ -1,0 +1,94 @@
+.impactHeader {
+    margin-top: 60px;
+    color: rgb(254, 254, 254, 0.65);
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 8px;
+}
+
+.gridItem {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.gridItem img {
+    width: 50px;
+    height: auto;
+}
+
+.item1 {
+    grid-column: span 2;
+    background: url("https://i.ibb.co/rdybNbK/dampak-1.png") 100% 100%;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.item2 {
+    background: url("https://i.ibb.co/WzFRtDK/dampak-2.png") 100% 100%;
+    background-size: contain;
+    border-radius: 12px;
+}
+
+.item3 {
+    background: url("https://i.ibb.co/wSj0kP9/dampak-3.png") 100% 100%;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.item4 {
+    background: url("https://i.ibb.co/XyR6xCp/dampak-4.png") 100% 100%;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.item5 {
+    background: url("https://i.ibb.co/MSMHSDp/dampak-5.png") 100% 100%;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.item6 {
+    background: url("https://i.ibb.co/s9jRg7n/dampak-6.png") 100% 100%;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.item7 {
+    background: url("https://i.ibb.co/kypjPck/dampak-7.png") 100% 100%;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 575px) and (min-width: 320px) {
+    .impactTitle {
+        font-size: 18px !important;
+    }
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .gridItem {
+        padding: 18px 12px;
+    }
+
+    .impactIcons {
+        width: 35px !important;
+        height: auto !important;
+    }
+
+    .impactHeader {
+        font-size: 12px !important;
+    }
+
+    .impactDesc {
+        font-size: 12px !important;
+    }
+}
