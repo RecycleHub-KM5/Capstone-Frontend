@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Sidebar from "../../../components/GlobalComponent/Sidebar";
 import MainLayout from "../../../layout/MainLayout";
 import History from "../../../components/UserMenu/Transaction";
+import { useDispatch, useSelector } from "react-redux";
+import { GetTransaction } from "../../../redux/actions/TransactionAction";
 
 const Transaction = () => {
+    const storedToken = localStorage.getItem("token");
+    const { dataTransaction } = useSelector(
+        (state) => state.transactionReducer
+    );
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        if (dataTransaction === null) {
+            dispatch(GetTransaction(storedToken));
+        }
+    }, [dispatch, dataTransaction, storedToken]);
+
     return (
         <>
             <MainLayout>
@@ -12,7 +26,7 @@ const Transaction = () => {
                         <Sidebar />
                     </div>
                     <div className="col-sm-10 col-md-10 col-lg-10">
-                        <History />
+                        <History dataTransaction={dataTransaction} />
                     </div>
                 </div>
             </MainLayout>

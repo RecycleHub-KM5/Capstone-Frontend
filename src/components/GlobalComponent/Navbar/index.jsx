@@ -8,9 +8,15 @@ const Navbar = () => {
 
     return (
         <nav className="navbar navbar-expand-lg">
-            <div className="container-fluid p-0">
+            <div className="container-fluid p-0 my-auto">
                 <Link className="navbar-brand color-light poppins-bold" to="/">
-                    RecycleHub
+                    <div className="wrapper d-flex justify-content-center align-items-center">
+                        <img
+                            src="https://cdn.discordapp.com/attachments/1164510335114428526/1179740777547579392/image.png?ex=657ae237&is=65686d37&hm=0f8279fbb3e6350a497862e02719333f91030ec351bef2726cd2021972d774f2&"
+                            className="brand-image"
+                        />
+                        <h1 className="font-paragraph m-0 ms-1">RecycleHub</h1>
+                    </div>
                 </Link>
                 <button
                     className="navbar-toggler"
