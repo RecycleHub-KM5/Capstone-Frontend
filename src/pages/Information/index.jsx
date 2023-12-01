@@ -7,6 +7,8 @@ import InformationSwiper from "../../components/Information/swiper";
 import { Link } from "react-router-dom";
 
 const Information = () => {
+    const status = localStorage.getItem("status_login");
+
     return (
         <MainLayout>
             <div className="container">
@@ -186,7 +188,7 @@ const Information = () => {
                             MENGGUNAKAN PRODUK DAUR ULANG
                         </strong>
                     </p>
-                    <Link to="/products" class="tombol">
+                    <Link to={status ? "/products" : "/login"} class="tombol">
                         Produk daur ulang
                     </Link>
                 </section>
