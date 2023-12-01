@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -45,16 +46,34 @@ const Footer = () => {
                         <div className="footer-row">
                             <ul className="no-indent">
                                 <li>
-                                    <a
-                                        href="gallery.html"
+                                    <Link
+                                        to="/gallery"
                                         className="color-light font-paragraph"
                                     >
                                         Galeri
-                                    </a>
+                                    </Link>
                                 </li>
-                                <li>Informasi</li>
-                                <li>Produk</li>
-                                <li>Bantuan</li>
+                                <li>
+                                    <Link
+                                        to="/information"
+                                        className="color-light font-paragraph"
+                                    >
+                                        Informasi
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to="/products"
+                                        className="color-light font-paragraph"
+                                    >
+                                        Produk
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className="color-light font-paragraph">
+                                        Bantuan
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </div>
