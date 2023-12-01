@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -18,18 +19,19 @@ const Footer = () => {
             </section>
 
             <footer className="mt-5">
-                <hr className="line" />
+                <hr className="line bgr-light" />
                 <div className="footer-container">
                     <div className="footer-left col-sm-7 col-md-10 col-lg-10">
+                        <img src="/icons/logo.svg" className="logo-footer" />
                         <h3 className="footer-header poppins-medium">
                             Tentang RecycleHub
                         </h3>
-                        <p className="footer-desc">
+                        <p className="footer-desc mb-5">
                             RecycleHub bertujuan untuk mengurangi sampah dengan
                             menyajikan konten edukasi dan daur ulang untuk masa
                             depan yang lebih baik di generasi selanjutnya.
                         </p>
-                        <div className="input-container">
+                        {/* <div className="input-container">
                             <input
                                 type="text"
                                 placeholder="Masukkan Email..."
@@ -41,20 +43,38 @@ const Footer = () => {
                             >
                                 Kirim
                             </button>
-                        </div>
+                        </div> */}
                         <div className="footer-row">
                             <ul className="no-indent">
                                 <li>
-                                    <a
-                                        href="gallery.html"
+                                    <Link
+                                        to="/gallery"
                                         className="color-light font-paragraph"
                                     >
                                         Galeri
-                                    </a>
+                                    </Link>
                                 </li>
-                                <li>Informasi</li>
-                                <li>Produk</li>
-                                <li>Bantuan</li>
+                                <li>
+                                    <Link
+                                        to="/information"
+                                        className="color-light font-paragraph"
+                                    >
+                                        Informasi
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to="/products"
+                                        className="color-light font-paragraph"
+                                    >
+                                        Produk
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className="color-light font-paragraph">
+                                        Bantuan
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </div>
