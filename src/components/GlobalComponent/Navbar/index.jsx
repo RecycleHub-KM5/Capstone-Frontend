@@ -58,7 +58,7 @@ const Navbar = () => {
                             </li>
                             <li className="nav-item">
                                 <NavLink
-                                    to="/products"
+                                    to={status ? "/products" : "/login"}
                                     className="navlink ms-4 me-5 poppins-medium"
                                 >
                                     Produk
