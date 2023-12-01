@@ -115,3 +115,8 @@ footer li {
         gap: 40px;
     }
 }
+
+.logo-footer {
+    width: 50px;
+    margin-bottom: 12px;
+}
