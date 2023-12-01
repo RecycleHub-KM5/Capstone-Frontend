@@ -20,7 +20,7 @@ const ChangePassword = () => {
                   </h1>
                 </div>
                 <div className="containerPass justify-content-center p-3">
-                  <div className="detail-ubh-pass px-4">
+                  <div className="detailUbhPass px-4">
                     <div className="ubah-password mb-3 mt-3">
                       <h2 className="poppins-semiBold color-light font-subtitle">
                         Ubah Password
@@ -45,12 +45,15 @@ const ChangePassword = () => {
                           >
                             Masukkan Password Baru <span>*</span>
                           </label>
-                          <input
-                            type="password"
-                            id="password"
-                            className="inputan container-fluid my-2 py-3 rounded-3 color-dark"
-                            placeholder="Masukkan password"
-                          />
+                          <div className="inputan">
+                            <input
+                              type="password"
+                              id="password"
+                              className="container-fluid my-2 py-3 rounded-3 color-dark"
+                              placeholder="Masukkan password"
+                            />
+                            <i className="iconMata fa-solid fa-eye"></i>
+                          </div>
                         </div>
                         <div className="mb-2 formPass">
                           <label
@@ -59,12 +62,15 @@ const ChangePassword = () => {
                           >
                             Konfirmasi Password <span>*</span>
                           </label>
-                          <input
-                            type="password"
-                            id="password"
-                            className="inputan container-fluid my-2 py-3 rounded-3 color-dark"
-                            placeholder="Konfirmasi Password"
-                          />
+                          <div className="inputan">
+                            <input
+                              type="password"
+                              id="password"
+                              className="container-fluid my-2 py-3 rounded-3 color-dark"
+                              placeholder="Konfirmasi Password"
+                            />
+                            <i className="iconMata fa-solid fa-eye"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
