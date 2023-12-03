@@ -3,10 +3,10 @@ import styles from "./style.module.css";
 
 const LPImpact = () => {
     return (
-        <section className="impact mt-5">
+        <section className="impact spacing-section">
             <header>
                 <h1
-                    className={`${styles.impactTitle} poppins-bold font-title color-light text-center mt-5`}
+                    className={`${styles.impactTitle} poppins-bold font-title color-light text-center my-5`}
                 >
                     Dampak Sampah Pada Lingkungan
                 </h1>
