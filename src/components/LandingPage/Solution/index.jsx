@@ -3,9 +3,9 @@ import styles from "./style.module.css";
 
 const LPSolution = () => {
     return (
-        <section className={`${styles.solution} mt-5`}>
+        <section className={`${styles.solution} spacing-section`}>
             <h1
-                className={`${styles.solutionTitle} poppins-bold font-title color-light text-center mt-5`}
+                className={`${styles.solutionTitle} poppins-bold font-title color-light text-center py-5`}
             >
                 Solusi Pencemaran <br />
                 Sampah

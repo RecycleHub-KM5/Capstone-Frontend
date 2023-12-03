@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const LPHero = () => {
     return (
-        <section className="hero-2 mt-5">
+        <section className="hero-2 spacing-section">
             <div className="card-box hero-wrapper d-flex align-items-center">
                 <div className="hero-text" id="flex-4">
                     <h1 className="hero-header poppins-bold font-title color-light">
