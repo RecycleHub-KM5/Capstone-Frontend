@@ -47,7 +47,7 @@ const DetailProductContent = ({ product }) => {
     const payment = async () => {
         const data = {
             token: userToken,
-            product_detail_id: param,
+            product_detail_id: `${selectedProduct.id}`,
             quantity: quantity,
             name: `${selectedProduct.name}`,
             total_price: `${selectedProduct.product.price}`,
@@ -64,6 +64,8 @@ const DetailProductContent = ({ product }) => {
             data,
             config
         );
+
+        console.log(data, "INI DATA POST NYA");
 
         setToken(response.data.token);
     };
