@@ -3,17 +3,17 @@
     display: block;
     color: #fefefe;
     padding: 8px 12px;
-    background: #050607;
+    background-color: #0e0f10;
 }
 
 .sidelink:hover {
     color: #44d62c;
 }
 
-.user-menu .active {
+.setting-menu .active {
     display: block;
     color: #050607;
     padding: 8px 12px;
-    background: #44d62c;
+    background-color: #44d62c;
     border-radius: 4px;
 }
