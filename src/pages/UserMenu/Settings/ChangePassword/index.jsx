@@ -1,9 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import MainLayout from "../../../../layout/MainLayout";
 import Sidebar from "../../../../components/GlobalComponent/Sidebar";
 import "./style.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 const ChangePassword = () => {
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+
+  const handleNewPasswordChange = (e) => {
+    setNewPassword(e.target.value);
+  };
+
+  const handleConfirmPasswordChange = (e) => {
+    setConfirmPassword(e.target.value);
+  };
+
+  const toggleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+
+  const handleSaveChanges = () => {
+    if (newPassword === "" || confirmPassword === "") {
+      alert("Harap isi semua kolom password.");
+      return;
+    }
+
+    if (newPassword !== confirmPassword) {
+      alert("Password baru dan konfirmasi password tidak cocok.");
+      return;
+    }
+
+    alert("Password berhasil diperbarui!");
+  };
+
   return (
     <MainLayout>
       <div className="row">
@@ -47,12 +79,18 @@ const ChangePassword = () => {
                           </label>
                           <div className="inputan">
                             <input
-                              type="password"
+                              type={showPassword ? "text" : "password"}
                               id="password"
+                              value={newPassword}
+                              onChange={handleNewPasswordChange}
                               className="container-fluid my-2 py-3 rounded-3 color-dark"
                               placeholder="Masukkan password"
                             />
-                            <i className="iconMata fa-solid fa-eye"></i>
+                            {/* <i className="iconMata fa-solid fa-eye"></i> */}
+                            <FontAwesomeIcon
+                              icon={showPassword ? faEye : faEyeSlash}
+                              onClick={toggleShowPassword}
+                            />
                           </div>
                         </div>
                         <div className="mb-2 formPass">
@@ -64,12 +102,18 @@ const ChangePassword = () => {
                           </label>
                           <div className="inputan">
                             <input
-                              type="password"
+                              type={showPassword ? "text" : "password"}
                               id="password"
+                              value={confirmPassword}
+                              onChange={handleConfirmPasswordChange}
                               className="container-fluid my-2 py-3 rounded-3 color-dark"
                               placeholder="Konfirmasi Password"
                             />
-                            <i className="iconMata fa-solid fa-eye"></i>
+                            {/* <i className="iconMata fa-solid fa-eye"></i> */}
+                            <FontAwesomeIcon
+                              icon={showPassword ? faEye : faEyeSlash}
+                              onClick={toggleShowPassword}
+                            />
                           </div>
                         </div>
                       </div>
@@ -79,6 +123,7 @@ const ChangePassword = () => {
                         <div className="btnSaveChange">
                           <button
                             type="button"
+                            onClick={handleSaveChanges}
                             className="btn bgr-primary btn-save py-3 px-5 rounded-4 color-dark poppins-semiBold mb-3"
                           >
                             Simpan Perubahan
