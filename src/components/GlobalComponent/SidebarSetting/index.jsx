@@ -9,10 +9,11 @@ const SidebarSettings = () => {
                 <h1 className="poppins-bold font-subtitle color-light">
                     RecycleHub
                 </h1>
-                <div className="user-menu mt-5">
+                <div className="setting-menu mt-5">
                     <NavLink
                         to="/users/settings"
                         className="sidelink mb-4 poppins-medium color-light"
+                        end
                     >
                         <div className="wrapper d-flex align-items-center">
                             <i className="fa-solid fa-user"></i>
@@ -24,6 +25,7 @@ const SidebarSettings = () => {
                     <NavLink
                         to="/users/settings/password"
                         className="sidelink mb-4 poppins-medium color-light"
+                        end
                     >
                         <div className="wrapper d-flex align-items-center">
                             <i className="fa-solid fa-key"></i>
