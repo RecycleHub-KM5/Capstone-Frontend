@@ -133,3 +133,7 @@ html {
     background-color: #050607;
     font-family: "Poppins";
 }
+
+.spacing-section {
+    margin-top: 250px;
+}

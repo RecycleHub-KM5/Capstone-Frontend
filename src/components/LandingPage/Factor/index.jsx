@@ -5,9 +5,9 @@ import { Pagination } from "swiper/modules";
 
 const LPFactor = () => {
     return (
-        <section className="factor">
+        <section className="factor spacing-section">
             <h1
-                className={`${styles.factorTitle} poppins-bold font-title color-light mt-5`}
+                className={`${styles.factorTitle} poppins-bold font-title color-light my-5`}
             >
                 Faktor-faktor penyebab <br />
                 penumpukan sampah

@@ -2,6 +2,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(56, 59, 62, 0.5);
+    overflow: auto;
 }
 
 .historyCard {

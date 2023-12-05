@@ -12,13 +12,13 @@
 
 .user-menu .active {
     display: block;
-    color: #050607;
+    color: #050607 !important;
     padding: 8px 12px;
     background: #44d62c;
     border-radius: 4px;
 }
 
 .menu-wrapper {
-    display: block;
-    height: 100%;
+    position: fixed;
+    height: 100vh;
 }

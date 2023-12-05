@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MainLayout from "../../../../layout/MainLayout";
-import Sidebar from "../../../../components/GlobalComponent/Sidebar";
+import SidebarSettings from "../../../../components/GlobalComponent/SidebarSetting";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
@@ -40,7 +40,7 @@ const ChangePassword = () => {
     <MainLayout>
       <div className="row">
         <div className="col-sm-2 col-md-2 col-lg-2">
-          <Sidebar />
+          <SidebarSettings />
         </div>
         <div className="col-sm-10 col-md-10 col-lg-10">
           <div className="containerMain">
@@ -103,7 +103,7 @@ const ChangePassword = () => {
                           <div className="inputan">
                             <input
                               type={showPassword ? "text" : "password"}
-                              id="password"
+                              id="confirmPassword"
                               value={confirmPassword}
                               onChange={handleConfirmPasswordChange}
                               className="container-fluid my-2 py-3 rounded-3 color-dark"

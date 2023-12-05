@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <>
-            <section className="tagline-footer mt-5">
+            <section className="tagline-footer spacing-section">
                 <div className="container d-flex justify-content-center">
                     <div className="row">
                         <div className="col-sm-12 col-md-12 col-lg-12">
@@ -18,7 +18,7 @@ const Footer = () => {
                 </div>
             </section>
 
-            <footer className="mt-5">
+            <footer className="spacing-section">
                 <hr className="line bgr-light" />
                 <div className="footer-container">
                     <div className="footer-left col-sm-7 col-md-10 col-lg-10">
