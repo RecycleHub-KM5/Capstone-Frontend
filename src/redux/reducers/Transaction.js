@@ -9,6 +9,12 @@ const transactionReducer = (state = initialStateApi, action) => {
             dataTransaction: action.payload,
         };
     }
+    if (action.type === "CLEAR_TRANSACTION_DATA") {
+        return {
+            ...state,
+            dataTransaction: null,
+        };
+    }
 
     return state;
 };

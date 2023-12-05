@@ -1,10 +1,15 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./style.css";
+import { useDispatch } from "react-redux";
+import { ClearTransactionData } from "../../../redux/actions/TransactionAction";
 
 const Sidebar = () => {
+    const dispatch = useDispatch();
     const navigate = useNavigate();
     const signOut = () => {
+        dispatch(ClearTransactionData());
+
         localStorage.removeItem("status_login");
         localStorage.removeItem("token");
         localStorage.removeItem("userName");
