@@ -1,5 +1,6 @@
 const initialStateApi = {
     dataUser: null,
+    updateNameUser: null,
 };
 
 const userReducer = (state = initialStateApi, action) => {
@@ -7,6 +8,13 @@ const userReducer = (state = initialStateApi, action) => {
         return {
             ...state,
             dataUser: action.payload,
+        };
+    }
+
+    if (action.type === "UPDATE_NAME_USERS") {
+        return {
+            ...state,
+            updateNameUser: action.payload,
         };
     }
 
