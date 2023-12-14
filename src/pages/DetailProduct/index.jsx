@@ -31,10 +31,6 @@ const DetailProduct = () => {
         }
     }, [dispatch, dataProduct]);
 
-    console.log(dataProduct);
-
-    console.log(dataDetailProduct, "ini datanya");
-
     return (
         <MainLayout>
             <div className="container">

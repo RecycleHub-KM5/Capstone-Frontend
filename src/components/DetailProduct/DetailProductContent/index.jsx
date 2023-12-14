@@ -64,9 +64,6 @@ const DetailProductContent = ({ product }) => {
             data,
             config
         );
-
-        console.log(data, "INI DATA POST NYA");
-
         setToken(response.data.token);
     };
 

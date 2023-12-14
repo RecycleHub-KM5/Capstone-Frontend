@@ -31,10 +31,18 @@ const Product = () => {
         if (dataProduct) {
             const filteredData = dataProduct.filter(
                 (product) =>
-                    product.name.toLowerCase().includes(searchTermLowerCase) ||
-                    product.description
-                        .toLowerCase()
-                        .includes(searchTermLowerCase)
+                    // product.name.toLowerCase().includes(searchTermLowerCase) ||
+                    // product.description
+                    //     .toLowerCase()
+                    //     .includes(searchTermLowerCase)
+                    (product.name &&
+                        product.name
+                            .toLowerCase()
+                            .includes(searchTermLowerCase)) ||
+                    (product.description &&
+                        product.description
+                            .toLowerCase()
+                            .includes(searchTermLowerCase))
             );
             setFilteredProduct(filteredData);
         }
