@@ -18,6 +18,13 @@ const userReducer = (state = initialStateApi, action) => {
         };
     }
 
+    if (action.type === "UPDATE_PASSWORD_USERS") {
+        return {
+            ...state,
+            updatePasswordUser: action.payload,
+        };
+    }
+
     return state;
 };
 

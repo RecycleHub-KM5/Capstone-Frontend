@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { AuthRegister } from "../../redux/actions/AuthAction";
 import ClipLoader from "react-spinners/ClipLoader";
 import Swal from "sweetalert2";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 const Register = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -209,13 +211,13 @@ const Register = () => {
                                                 id="basic-addon1"
                                             >
                                                 {showPassword ? (
-                                                    <i
-                                                        className={`fa-solid fa-eye-slash`}
-                                                    ></i>
+                                                    <FontAwesomeIcon
+                                                        icon={faEyeSlash}
+                                                    />
                                                 ) : (
-                                                    <i
-                                                        className={`fa-solid fa-eye`}
-                                                    ></i>
+                                                    <FontAwesomeIcon
+                                                        icon={faEye}
+                                                    />
                                                 )}
                                             </span>
                                         </div>
@@ -254,13 +256,13 @@ const Register = () => {
                                                 id="basic-addon1"
                                             >
                                                 {showPassword2 ? (
-                                                    <i
-                                                        className={`fa-solid fa-eye-slash`}
-                                                    ></i>
+                                                    <FontAwesomeIcon
+                                                        icon={faEyeSlash}
+                                                    />
                                                 ) : (
-                                                    <i
-                                                        className={`fa-solid fa-eye`}
-                                                    ></i>
+                                                    <FontAwesomeIcon
+                                                        icon={faEye}
+                                                    />
                                                 )}
                                             </span>
                                         </div>
