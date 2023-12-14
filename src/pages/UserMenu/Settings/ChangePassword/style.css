@@ -20,18 +20,29 @@
   color: red;
 }
 
-.inputan{
-    position: relative;
+.inputan {
+  position: relative;
 }
-.iconMata{
-    position: absolute; 
-    top: 50%;
-    transform: translateY(-50%);
-    right: 40px;
-    pointer-events: none;
-    font-size: 20px;
-    /* margin-left: 300px; */
+
+.inputan svg {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
 }
+
+.iconMata {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+  pointer-events: none;
+  font-size: 20px;
+  /* margin-left: 300px; */
+}
+
 .btn:hover {
   background-color: #44d62c !important;
 }
