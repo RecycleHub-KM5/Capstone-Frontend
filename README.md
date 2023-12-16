@@ -15,7 +15,7 @@ Fitur
 * Autentikasi Register
 * Validasi form
 * Filter konten produk
-* Transasksi (Payment Gateway Midtrans)
+* Transasksi (Payment Gateway Midtrans), simulasi pembayaran bisa melalui link berikut: [Simulator Midtrans BCA](https://simulator.sandbox.midtrans.com/bca/va/index)
 * Riwayat Transaksi
 
 Tools & bahasa yang digunakan, yaitu:
