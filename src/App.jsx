@@ -16,9 +16,8 @@ import "./assets/css/style.css";
 function App() {
     return (
         <BrowserRouter>
-            <Analytics>
-                <Router />
-            </Analytics>
+            <Router />
+            <Analytics />
         </BrowserRouter>
     );
 }
