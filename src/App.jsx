@@ -13,10 +13,6 @@ import "./assets/plugins/fontawesome/js/all.min.js";
 // CSS Global
 import "./assets/css/style.css";
 
-const analytics = Analytics.getInstance();
-
-analytics.trackEvent("Homepage Visited");
-
 function App() {
     return (
         <BrowserRouter>
