@@ -1,6 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
 import Router from "./config/router";
-import { Analytics } from "@vercel/analytics/react";
 
 // Boostrap
 import "./assets/plugins/bootstrap/css/bootstrap.min.css";
@@ -17,7 +16,6 @@ function App() {
     return (
         <BrowserRouter>
             <Router />
-            <Analytics />
         </BrowserRouter>
     );
 }
