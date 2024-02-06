@@ -174,13 +174,13 @@ const DetailProductContent = ({ product }) => {
                                     <QuantityControl
                                         onQuantityChange={setQuantity}
                                     />
-                                    <button
+                                    {/* <button
                                         className={`${styles.cart} color-light d-flex justify-content-center align-items-center ms-2`}
                                     >
                                         <p className="my-auto font-smaller poppins-medium mx-2">
                                             + Keranjang
                                         </p>
-                                    </button>
+                                    </button> */}
                                     <button
                                         onClick={payment}
                                         className={`${styles.buy} bgr-primary color-dark d-flex justify-content-center align-items-center ms-2`}

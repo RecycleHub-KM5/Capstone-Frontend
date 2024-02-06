@@ -9,6 +9,12 @@
 .gridItem {
     background-color: #222222;
     border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.gridItem:hover {
+    transform: translateY(-4px);
+    box-shadow: 2px 2px 4px rgba(254, 254, 254, 0.4);
 }
 
 .gridItem img {
