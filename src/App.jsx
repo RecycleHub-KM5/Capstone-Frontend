@@ -11,12 +11,16 @@ import "./assets/plugins/fontawesome/js/all.min.js";
 
 // CSS Global
 import "./assets/css/style.css";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
     return (
-        <BrowserRouter>
-            <Router />
-        </BrowserRouter>
+        <>
+            <Analytics />
+            <BrowserRouter>
+                <Router />
+            </BrowserRouter>
+        </>
     );
 }
 
