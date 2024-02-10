@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Route, Routes } from "react-router";
 import LandingPage from "../../pages/LandingPage";
 import Gallery from "../../pages/Gallery";
@@ -11,7 +11,14 @@ import DetailProduct from "../../pages/DetailProduct";
 import ChangeName from "../../pages/UserMenu/Settings/ChangeName";
 import ChangePassword from "../../pages/UserMenu/Settings/ChangePassword";
 
+import ReactGA from "react-ga";
+const TRACKING_ID = "UA-293901876-1";
+ReactGA.initialize(TRACKING_ID);
+
 const Router = () => {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }, []);
     return (
         <Routes>
             <Route path="/" element={<LandingPage />} />
