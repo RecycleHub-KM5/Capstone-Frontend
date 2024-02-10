@@ -18,11 +18,6 @@ import { useEffect, useState } from "react";
 function App() {
     ReactGA.initialize("G-Q0Z9NKF8NL");
 
-    const location = useLocation();
-    useEffect(() => {
-        ReactGA.pageview(location.pathname + location.search);
-    }, [location]);
-
     const [formData, setFormData] = useState({
         browser_type: "",
         created_at: "",
