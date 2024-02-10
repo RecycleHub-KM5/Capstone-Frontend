@@ -2,6 +2,7 @@ import { BrowserRouter, useLocation } from "react-router-dom";
 import Router from "./config/router";
 import { Analytics } from "@vercel/analytics/react";
 import ReactGA from "react-ga";
+ReactGA.initialize("G-Q0Z9NKF8NL");
 
 // Boostrap
 import "./assets/plugins/bootstrap/css/bootstrap.min.css";
@@ -16,8 +17,6 @@ import "./assets/css/style.css";
 import { useEffect, useState } from "react";
 
 function App() {
-    ReactGA.initialize("G-Q0Z9NKF8NL");
-
     const [formData, setFormData] = useState({
         browser_type: "",
         created_at: "",
