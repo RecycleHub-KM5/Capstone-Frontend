@@ -24,12 +24,7 @@ const Information = () => {
                                 PENUMPUKAN <br />
                                 SAMPAH
                             </h1>
-                            <p id="description">
-                                beberapa penyebab penumpukan sampah diantaranya
-                                : penggunaan barang sekali pakai, Kuangnya
-                                pendidikan lingkungan, Kurangnya Tempat
-                                pembuangan akhir, dan Pertumbuhan Penduduk.
-                            </p>
+                            <p id="description">beberapa penyebab penumpukan sampah diantaranya : penggunaan barang sekali pakai, Kuangnya pendidikan lingkungan, Kurangnya Tempat pembuangan akhir, dan Pertumbuhan Penduduk.</p>
                         </div>
                     </section>
                 </div>
@@ -41,19 +36,8 @@ const Information = () => {
                         <div class="card-causes causes-1">
                             <div class="content-causes">
                                 <h1 class="no-causes">01</h1>
-                                <h3 class="poppins-medium font-subtitle">
-                                    Penggunaan Barang Sekali Pakai
-                                </h3>
-                                <small class="poppins-regular lh-base">
-                                    Barang-barang sekali pakai adalah produk
-                                    yang dirancang untuk digunakan sekali saja
-                                    atau hanya dalam jangka waktu singkat
-                                    sebelum dibuang. Beberapa contoh barang
-                                    sekali pakai yang umum termasuk kantong
-                                    plastik, gelas plastik, sendok garpu
-                                    plastik, peralatan makanan sekali pakai, dan
-                                    banyak jenis kemasan plastik.
-                                </small>
+                                <h3 class="poppins-medium font-subtitle">Penggunaan Barang Sekali Pakai</h3>
+                                <small class="poppins-regular lh-base">Barang-barang sekali pakai adalah produk yang dirancang untuk digunakan sekali saja atau hanya dalam jangka waktu singkat sebelum dibuang. Beberapa contoh barang sekali pakai yang umum termasuk kantong plastik, gelas plastik, sendok garpu plastik, peralatan makanan sekali pakai, dan banyak jenis kemasan plastik.</small>
                             </div>
                         </div>
                         <div class="card-causes causes-2">
@@ -63,15 +47,7 @@ const Information = () => {
                                     Kurangnya <br />
                                     Pendidikan Lingkungan
                                 </h3>
-                                <small class="poppins-regular lh-base">
-                                    kurangnya pendidikan lingkungan merupakan
-                                    salah satu penyebab utama penumpukan sampah.
-                                    Pendidikan lingkungan yang kurang atau tidak
-                                    memadai dapat mengakibatkan kesadaran yang
-                                    rendah tentang pentingnya menjaga lingkungan
-                                    dan praktik pengelolaan sampah yang
-                                    berkelanjutan
-                                </small>
+                                <small class="poppins-regular lh-base">kurangnya pendidikan lingkungan merupakan salah satu penyebab utama penumpukan sampah. Pendidikan lingkungan yang kurang atau tidak memadai dapat mengakibatkan kesadaran yang rendah tentang pentingnya menjaga lingkungan dan praktik pengelolaan sampah yang berkelanjutan</small>
                             </div>
                         </div>
                     </div>
@@ -83,33 +59,14 @@ const Information = () => {
                                     Kurangnya <br />
                                     Tempat Pembuangan Akhir
                                 </h3>
-                                <small class="poppins-regular lh-base">
-                                    kurangnya tempat pembuangan akhir (TPA) atau
-                                    fasilitas pengelolaan sampah yang memadai
-                                    merupakan salah satu penyebab utama
-                                    penumpukan sampah. Ketika tidak ada
-                                    infrastruktur yang cukup untuk menangani
-                                    sampah yang dihasilkan oleh masyarakat, maka
-                                    sampah dapat menumpuk di berbagai tempat
-                                    yang tidak sesuai, seperti di pinggir jalan,
-                                    lahan kosong, sungai, atau bahkan di
-                                    lingkungan alam.
-                                </small>
+                                <small class="poppins-regular lh-base">kurangnya tempat pembuangan akhir (TPA) atau fasilitas pengelolaan sampah yang memadai merupakan salah satu penyebab utama penumpukan sampah. Ketika tidak ada infrastruktur yang cukup untuk menangani sampah yang dihasilkan oleh masyarakat, maka sampah dapat menumpuk di berbagai tempat yang tidak sesuai, seperti di pinggir jalan, lahan kosong, sungai, atau bahkan di lingkungan alam.</small>
                             </div>
                         </div>
                         <div class="card-causes causes-4">
                             <div class="content-causes">
                                 <h1 class="no-causes">04</h1>
-                                <h3 class="poppins-medium font-subtitle">
-                                    Pertumbuhan Penduduk
-                                </h3>
-                                <small class="poppins-regular lh-base">
-                                    pertumbuhan penduduk merupakan salah satu
-                                    faktor utama penyebab penumpukan sampah.
-                                    Pertumbuhan penduduk yang cepat dalam suatu
-                                    daerah dapat menghasilkan peningkatan jumlah
-                                    sampah yang dihasilkan oleh masyarakat.
-                                </small>
+                                <h3 class="poppins-medium font-subtitle">Pertumbuhan Penduduk</h3>
+                                <small class="poppins-regular lh-base">pertumbuhan penduduk merupakan salah satu faktor utama penyebab penumpukan sampah. Pertumbuhan penduduk yang cepat dalam suatu daerah dapat menghasilkan peningkatan jumlah sampah yang dihasilkan oleh masyarakat.</small>
                             </div>
                         </div>
                     </div>
@@ -138,41 +95,20 @@ const Information = () => {
                             <div class="col-sm-12 cok-md-6 col-lg-6">
                                 <div class="point-solusi">
                                     <div>
-                                        <img
-                                            src="https://cdn.discordapp.com/attachments/1153638653332029440/1162290517955063891/icon1.png?ex=653b6665&is=6528f165&hm=3be1c87d9b7e21b6727e0df0096593ca6ee2a8cf252e022ab18c6e7ffd77c491&"
-                                            alt="icon1"
-                                        />
-                                        <h3>
-                                            Penggunaan Barang Yang dapat di Daur
-                                            Ulang
-                                        </h3>
+                                        <img src="https://cdn.discordapp.com/attachments/1164510335114428526/1218863613616328776/image.png?ex=66093632&is=65f6c132&hm=4b3a30c2edfc0a81dd5a6fd19b69e53e14832470cbf04d91dbe08f61fd748366&" alt="icon1" />
+                                        <h3>Penggunaan Barang Yang dapat di Daur Ulang</h3>
                                     </div>
                                     <div>
-                                        <img
-                                            src="https://cdn.discordapp.com/attachments/1153638653332029440/1162290517699219467/icon2.png?ex=653b6665&is=6528f165&hm=2f2f4835bfc339157e6725d3a8e707db51d755d3351a3a91416d01d58982d434&"
-                                            alt="icon2"
-                                        />
-                                        <h3>
-                                            Pemberian Edukasi Pendidikan
-                                            lingkungan
-                                        </h3>
+                                        <img src="https://cdn.discordapp.com/attachments/1164510335114428526/1218863647338791002/image.png?ex=6609363a&is=65f6c13a&hm=d38eff578d849ce98aae0be4cef0a562fc3c23a0db168a594e5c84150788bb58&" alt="icon2" />
+                                        <h3>Pemberian Edukasi Pendidikan lingkungan</h3>
                                     </div>
                                     <div>
-                                        <img
-                                            src="https://cdn.discordapp.com/attachments/1153638653332029440/1162290517485289532/icon3.png?ex=653b6665&is=6528f165&hm=03251946364c027772caaaff1689176bef1eccff174a20fad55ddf1267aa062b&"
-                                            alt="icon3"
-                                        />
+                                        <img src="https://cdn.discordapp.com/attachments/1164510335114428526/1218863663654637578/image.png?ex=6609363e&is=65f6c13e&hm=ec3d8d938a1a3f7d222a9b6cfacd96da0db87a32711683ba768d8ad96dc72b42&" alt="icon3" />
                                         <h3>Pengelolaan Sampah yang Efisien</h3>
                                     </div>
                                     <div>
-                                        <img
-                                            src="https://cdn.discordapp.com/attachments/1153638653332029440/1162290517271392348/icon4.png?ex=653b6665&is=6528f165&hm=b35769c91df215cb2f44be56937252e730c2cc61d58baf4b7eb87ae79809f34b&"
-                                            alt="icon4"
-                                        />
-                                        <h3>
-                                            Menggunakan produk produk yang ramah
-                                            lingkungan
-                                        </h3>
+                                        <img src="https://cdn.discordapp.com/attachments/1164510335114428526/1218863681316585482/image.png?ex=66093643&is=65f6c143&hm=6e266b3f09be30f31065ff6d729494073637ae05aee86ba4ab6f0bef4b3ea25d&" alt="icon4" />
+                                        <h3>Menggunakan produk produk yang ramah lingkungan</h3>
                                     </div>
                                 </div>
                             </div>
